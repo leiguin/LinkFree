@@ -55,7 +55,7 @@ body{
     color: var(--accentColor);
 }
 
-h3 {
+h2 {
     color: white;
     display: block;
     font-family: var(--font);
