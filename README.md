@@ -1,53 +1,50 @@
-# LinkFree
-A free and open source alternative to LinkTree!
+# Standard Template
 
-[Website](https://michaelbarney.github.io/LinkFree)
+[Website](https://michaelbarney.github.io/LinkFree/Templates/Standard/)
 
 <img src="https://i.imgur.com/B4LX0kY.png" alt="alt text" width="250px">
 
-## What is LinkFree?
-Ever wanted to add more links to your Instagram bio? LinkFree does just that! It gathers all of your links into one page that is easy to navigate.
+## How to Use
+### index.html
+ 1. **Title**
+    This is the name that is given to the page.
+	   ```
+	   <title>Your Title Here</title>
+	   ```
+ 2. **(Optional) Favicon** 
+	To change the favicon, just replace the "favicon.ico" file. You can generate the .ico file in a website like [favicon.io](https://favicon.io/).
+ 3. **Image**
+	 This is the user image that is shown. Make sure it is square and substitute the "src" property with its url. You can generate the url in a website like [imgur](https://imgur.com/).
+	```
+	<img  id="userPhoto"  src="https://i.imgur.com/t8ZX9um.jpg"  alt="User Photo">
+	```
+ 4. **Username**
+	Your Instagram username. Change the "href" property with its url and add substitute the text with your @.
+	```
+	<a  href="https://www.instagram.com/thesimpsons"  id="userName"></h3>@thesimpsons</a>
+	```
+ 5. **Links**
+ To add your clickable links just substitute, delete or copy the "a" tags inside the "links" div with your desired hyperlinks.
+	```
+	<div  id="links">
 
-## What are the benefits?
-Compared to other solutions, LinkFree is fully customizable and open source!
-- No more pesky third party logos
-- Add your custom colors, images and fonts
-- Use full custom analytics and metrics platforms
-- Create your own template or use one made by the community!
+		<a  href="https://pt.wikipedia.org/wiki/Homer_Simpson"  target="_blank">Wikipedia</a>
 
-## How to use?
-To startoff, you can choose a template for your LinkFree in the "Templates" directory. Then you can clone or fork this repository to adapt it with your information.
+		<a  href="https://foxplay.com/br/forme"  target="_blank">IMDB</a>
 
-After this, there are some options to use LinkTree to match the way you want to use.
-
-### 1 - Pull Request
-You can make a Pull Request that adds your LinkFree into this project's Users folder. This way, you can easily access it through your link found on [this link](https://michaelbarney.github.io/LinkFree/Users).
-
-The link is quite big, so you can use an url shortner like [this one](https://bitly.com/) to make it smaller/
-
-The downside is that updates to the website will need to be made through accepted pull requests, making it slower.
-
-### 2 - Fork and Configure
-Another option is to fork this repository to your own account and there configure your personal page using github pages. This will let you make edits much faster.
-
-If you want to still share your LinkFree with the community, you can add its shortened url into the Users readme file.
-
-## How to see statistics?
-You can use any statiscs platform of your choosing that is based on client javascript. We recommend the following:
-- [Amplitude](https://amplitude.com/homepage)
-- [Hotjar](https://www.hotjar.com/)
-
-You can use any of the functions for load and click defined on the javascript file of the LinkFree template or add code snippets to the Head or Body of the HTML file.
-
-## How to contribute?
-There are a three ways you can contribute. You can make changes to the core LinkFree project, create new LinkFree templates or just share your LinkFree.
-
-Only contributors that work on the LinkFree core project or that create a new template will be featured on this page's contributor list.
-
-### Creating Templates
-A new template is a general LinkFree that has a distinctive structure or style when compared to previous templates.
-
-To submit one, you just have to make a pull request with your addition in the "Templates" directory.
-
-
-
+	</div>
+	```
+### style.css
+ 6. **Colors**
+	 Substitute the background and accent colors with your desired pallete.
+	 ```
+	 --bgColor: white;
+	--accentColor: #39e09b;
+	 ```
+ 7. **Fonts**
+	 You can import the font from a website like [Google Fonts](https://fonts.google.com/) and substitute the "--font" variable with its implementation.
+	 ```
+	 @import  url('https://fonts.googleapis.com/css?family=Karla:400,700&display=swap');
+	 
+	 --font: 'Karla', sans-serif;
+	 ```
