@@ -54,3 +54,12 @@ body{
     background-color: var(--bgColor);
     color: var(--accentColor);
 }
+
+h3 {
+    color: white;
+    display: block;
+    font-family: var(--font);
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+}
